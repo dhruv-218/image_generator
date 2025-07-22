@@ -144,7 +144,9 @@ Real/Fake Classification
 ---
 
 ##  Output
-- Models generate synthetic advertisement-style images.
+- results from `iteration2.ipynb`
+  -  <img src="assets/sample1.png" alt="Generated Sample" width="300"/>
+ 
 - Sample outputs are visualized during training using saved image grids.
 
 ---

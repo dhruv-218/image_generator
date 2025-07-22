@@ -1,0 +1,6 @@
+torch
+torchvision
+pillow
+requests
+beautifulsoup4
+numpy

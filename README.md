@@ -12,6 +12,9 @@ This repository provides a complete pipeline for collecting advertisement images
 - [Features](#features)
 - [Project Structure](#project-structure)
 - [Installation](#installation)
+- [model Architecture](#Architecture)
+- [model Architecture](#iteration2.ipynb)
+- [model Architecture](#iteration2.ipynb)
 - [Usage](#usage)
   - [Image Scraper](#image-scraper)
   - [GAN Training (PyTorch)](#gan-training-pytorch)
@@ -60,6 +63,107 @@ This repository provides a complete pipeline for collecting advertisement images
    ```
 
 ---
+
+##  model Architecture
+## 🚀 Model 1: `iteration2.ipynb`
+
+### 🔧 Framework
+**PyTorch**
+
+### 🧱 Architecture: Encoder-Decoder GAN
+
+**Generator:**
+```
+Input Image
+  ↓
+Conv2D(3 → 64), ReLU
+  ↓
+Conv2D(64 → 128), BatchNorm, ReLU
+  ↓
+Conv2D(128 → 256), BatchNorm, ReLU
+  ↓
+ConvTranspose2D(256 → 128), BatchNorm, ReLU
+  ↓
+ConvTranspose2D(128 → 64), BatchNorm, ReLU
+  ↓
+ConvTranspose2D(64 → 3), Tanh
+  ↓
+Output Image
+```
+
+**Discriminator:**
+```
+Input Image
+  ↓
+Conv2D → LeakyReLU
+  ↓
+Conv2D → LeakyReLU
+  ↓
+Flatten → Dense → Sigmoid
+  ↓
+Real/Fake Classification
+```
+
+---
+
+## 🧠 Model 2: `tensor-gan (1).ipynb`
+
+### 🔧 Framework
+**TensorFlow + Keras**
+
+### 🧱 Architecture: Deep Convolutional GAN (DCGAN)
+
+**Generator:**
+```
+Noise Vector
+  ↓
+Dense Layer → Reshape
+  ↓
+Conv2DTranspose → BatchNorm → ReLU
+  ↓
+Conv2DTranspose → BatchNorm → ReLU
+  ↓
+Conv2DTranspose → Tanh
+  ↓
+Generated Image
+```
+
+**Discriminator:**
+```
+Input Image
+  ↓
+Conv2D → LeakyReLU
+  ↓
+Conv2D → LeakyReLU
+  ↓
+Flatten → Dense → Sigmoid
+  ↓
+Real/Fake Classification
+```
+
+---
+
+## 🖼️ Output
+- Models generate synthetic advertisement-style images.
+- Sample outputs are visualized during training using saved image grids.
+
+---
+
+## 📦 Dependencies
+
+### For `iteration2.ipynb`
+- `torch`
+- `torchvision`
+- `pillow`
+
+### For `tensor-gan (1).ipynb`
+- `tensorflow`
+- `numpy`
+- `matplotlib`
+- `imageio`
+
+---
+
 
 ## Usage
 

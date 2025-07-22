@@ -65,12 +65,12 @@ This repository provides a complete pipeline for collecting advertisement images
 ---
 
 ##  model Architecture
-## 🚀 Model 1: `iteration2.ipynb`
+## Model 1: `iteration2.ipynb`
 
-### 🔧 Framework
+###  Framework
 **PyTorch**
 
-### 🧱 Architecture: Encoder-Decoder GAN
+###  Architecture: Encoder-Decoder GAN
 
 **Generator:**
 ```
@@ -106,12 +106,12 @@ Real/Fake Classification
 
 ---
 
-## 🧠 Model 2: `tensor-gan (1).ipynb`
+##  Model 2: `tensor-gan (1).ipynb`
 
-### 🔧 Framework
+###  Framework
 **TensorFlow + Keras**
 
-### 🧱 Architecture: Deep Convolutional GAN (DCGAN)
+###  Architecture: Deep Convolutional GAN (DCGAN)
 
 **Generator:**
 ```
@@ -143,13 +143,13 @@ Real/Fake Classification
 
 ---
 
-## 🖼️ Output
+##  Output
 - Models generate synthetic advertisement-style images.
 - Sample outputs are visualized during training using saved image grids.
 
 ---
 
-## 📦 Dependencies
+##  Dependencies
 
 ### For `iteration2.ipynb`
 - `torch`

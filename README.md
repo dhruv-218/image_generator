@@ -145,7 +145,7 @@ Real/Fake Classification
 
 ##  Output
 - results from `iteration2.ipynb`
-  -  <img src="assets/sample1.png" alt="Generated Sample" width="300"/>
+  -  <img src="https://github.com/dhruv-218/image_generator/blob/main/output%20/caef04e7-25f3-4206-932e-c4d442c0b250.png" alt="Generated Sample" width="300"/>
  
 - Sample outputs are visualized during training using saved image grids.
 

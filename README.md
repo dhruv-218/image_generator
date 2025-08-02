@@ -3,6 +3,7 @@
 
 This repository provides a complete pipeline for collecting advertisement images from the web and training deep learning models to generate or denoise images.
 
+![Training Progress - Epoch 79](https://github.com/dhruv-218/image_generator/blob/main/epoch_79.png)
 
 It includes:
 

@@ -2,16 +2,6 @@
 # Image Generator Project
 
 This repository provides a complete pipeline for collecting advertisement images from the web and training deep learning models to generate or denoise images.
-<table>
-  <tr>
-    <td>
-      <img src="https://github.com/dhruv-218/image_generator/blob/main/output%20/caef04e7-25f3-4206-932e-c4d442c0b250.png" alt="Screenshot 2025-08-01 at 8.29.45 AM" width="900">
-    </td>
-    <td>
-      <img src="https://github.com/dhruv-218/image_generator/blob/main/epoch_79.png
-</table>" alt="Screenshot 2025-08-02 at 2.55.41 AM" width="900">
-    </td>
-  </tr>
 
 
 It includes:

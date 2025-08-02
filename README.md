@@ -1,7 +1,20 @@
 
 # Image Generator Project
 
-This repository provides a complete pipeline for collecting advertisement images from the web and training deep learning models to generate or denoise images. It includes:
+This repository provides a complete pipeline for collecting advertisement images from the web and training deep learning models to generate or denoise images.
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/dhruv-218/image_generator/blob/main/output%20/caef04e7-25f3-4206-932e-c4d442c0b250.png" alt="Screenshot 2025-08-01 at 8.29.45 AM" width="900">
+    </td>
+    <td>
+      <img src="https://github.com/dhruv-218/image_generator/blob/main/epoch_79.png
+</table>" alt="Screenshot 2025-08-02 at 2.55.41 AM" width="900">
+    </td>
+  </tr>
+
+
+It includes:
 
 1. **Image Scraper** (`image_scraaperr.py`): Scrapes images from [Ads of the World](https://www.adsoftheworld.com) and organizes them by page.
 2. **Image Generator (GAN)** (`iteration2.ipynb`, `tensor-gan (1).ipynb`): Jupyter notebooks for training Generative Adversarial Networks (GANs) using PyTorch or TensorFlow.
@@ -143,11 +156,32 @@ Real/Fake Classification
 
 ---
 
-##  Output
-- results from `iteration2.ipynb`
-  -  <img src="https://github.com/dhruv-218/image_generator/blob/main/output%20/caef04e7-25f3-4206-932e-c4d442c0b250.png" alt="Generated Sample" width="300"/>
- 
-- Sample outputs are visualized during training using saved image grids.
+# Output Results
+
+## Training Results
+
+### tensor-gan (1).ipynb Results
+![GAN Training Results](https://github.com/dhruv-218/image_generator/blob/main/output%20/caef04e7-25f3-4206-932e-c4d442c0b250.png)
+
+### iteration2.ipynb Results  
+![Training Progress - Epoch 79](https://github.com/dhruv-218/image_generator/blob/main/epoch_79.png)
+
+## Visualization Details
+
+- Sample outputs are visualized during training using saved image grids
+- Results showcase the progression of the GAN model across different iterations
+- Images demonstrate the quality improvement of generated samples over training epochs
+
+## Files Overview
+
+| Notebook | Description | Output Sample |
+|----------|-------------|---------------|
+| `tensor-gan (1).ipynb` |  GAN implementation | Grid of generated samples(500) |
+| `iteration2.ipynb` | Improved model iteration | Epoch 79 training results |
+
+---
+
+*Note: All output images are automatically saved during training and can be found in the `output/` directory.*
 
 ---
 
